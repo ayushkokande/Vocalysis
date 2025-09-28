@@ -16,7 +16,7 @@ function AppLayout() {
           <nav className="flex flex-col gap-6 pt-8 sm:flex-row sm:items-center sm:justify-between">
             <div>
               <NavLink to="/" className="text-lg font-semibold tracking-tight text-white">
-                Vocal Coach
+                Vocalysis
               </NavLink>
               <p className="text-xs uppercase tracking-[0.35em] text-slate-300/70">Practice Suite</p>
             </div>

@@ -526,21 +526,10 @@ function FeedbackSummaryCard({ showDeepAnalysis, onToggleDeepAnalysis }) {
   return (
     <Card className="border-accent/30 bg-accent/10">
       <CardHeader className="pb-4">
-        <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-          <div>
-            <CardTitle>Feedback Summary</CardTitle>
-            <CardDescription>
-              Quick recap of your last take. Open Deep Analysis when you want the full charts.
-            </CardDescription>
-          </div>
-          <button
-            type="button"
-            onClick={onToggleDeepAnalysis}
-            className="inline-flex items-center gap-2 rounded-full border border-accent/50 px-4 py-2 text-sm font-medium text-accent transition hover:bg-accent/20"
-          >
-            {showDeepAnalysis ? 'Hide Deep Analysis' : 'Open Deep Analysis'}
-          </button>
-        </div>
+        <CardTitle>Feedback Summary</CardTitle>
+        <CardDescription>
+          Quick recap of your last take. Open Deep Analysis when you want the full charts.
+        </CardDescription>
       </CardHeader>
       <CardContent className="space-y-4">
         <div>
@@ -585,6 +574,15 @@ function FeedbackSummaryCard({ showDeepAnalysis, onToggleDeepAnalysis }) {
           </div>
         ) : null}
       </CardContent>
+      <CardFooter className="pt-2 sm:pt-4">
+        <button
+          type="button"
+          onClick={onToggleDeepAnalysis}
+          className="inline-flex items-center gap-2 rounded-full border border-accent/50 px-4 py-2 text-sm font-medium text-accent transition hover:bg-accent/20"
+        >
+          {showDeepAnalysis ? 'Hide Deep Analysis' : 'Open Deep Analysis'}
+        </button>
+      </CardFooter>
     </Card>
   )
 }
@@ -1313,7 +1311,7 @@ export default function PracticeStudioPage() {
     <div className="space-y-12 pb-16">
       <header className="space-y-3 text-slate-100">
         <div className="space-y-2">
-          <p className="text-sm uppercase tracking-[0.35em] text-slate-300/70">Vocal Coach</p>
+          <p className="text-sm uppercase tracking-[0.35em] text-slate-300/70">Vocalysis</p>
           <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">Vocal Lab</h1>
           <p className="max-w-2xl text-base text-slate-300/80">
             Explore interactive drills for pitch, breath, range, expression, and confidence. Everything starts in demo
