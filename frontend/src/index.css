@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  @apply min-h-screen m-0 bg-studio-gradient text-slate-100 font-display;
+}
+
+a {
+  color: inherit;
+}
+
+#root {
+  @apply min-h-screen;
+}
